@@ -1,0 +1,210 @@
+/* ==============================
+   PAGE CONTACT — Echo Sonore
+   Mobile First
+   ============================== */
+
+/* --------------------------------
+   SECTION CONTACT (titre + intro)
+   -------------------------------- */
+.section-contact {
+    background-color: var(--beige100);
+    padding: 32px 24px 0;
+}
+
+.section-contact .section__title {
+    font-family: var(--titre), sans-serif;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--vert-500);
+    margin: 0 0 12px;
+}
+
+.section-contact .section__intro {
+    font-family: var(--texte-regular13), sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: var(--noir400);
+    max-width: 260px;
+    margin: 0;
+}
+
+
+/* --------------------------------
+   FORMULAIRE (bande verte + pilles)
+   -------------------------------- */
+.contact-form {
+    margin: 32px -24px 0;
+    padding: 40px 24px 54px;
+    background: linear-gradient(to bottom,
+            var(--vert-500) 0,
+            var(--vert-500) 12px,
+            var(--beige100) 12px,
+            var(--beige100) 18px,
+            var(--vert300) 18px,
+            var(--vert300) calc(100% - 12px),
+            var(--vert-500) calc(100% - 12px),
+            var(--vert-500) 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: stretch;
+}
+
+.contact-form .form__label {
+    font-family: var(--titre), sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 1.8rem;
+    color: var(--vert-500);
+    max-width: 360px;
+}
+
+.contact-form .form__input,
+.contact-form .form__textarea {
+    width: 100%;
+    max-width: 360px;
+    background-color: var(--beige100);
+    border: none;
+    padding: 16px 20px;
+    font-family: var(--texte-regular13), sans-serif;
+    font-size: 1.4rem;
+    color: var(--noir400);
+    border-radius: 24px;
+    outline: none;
+}
+
+.contact-form .form__textarea {
+    min-height: 240px;
+    border-radius: 18px;
+    resize: vertical;
+}
+
+.contact-form .form__input:focus,
+.contact-form .form__textarea:focus {
+    box-shadow: 0 0 0 2px rgba(25, 94, 36, 0.32);
+}
+
+.contact-form .btn.btn--dark {
+    align-self: flex-start;
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--vert-500);
+    color: var(--beige100);
+    font-family: var(--texte-gras13), sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-left: 0;
+}
+
+.contact-form .btn.btn--dark:hover {
+    transform: translateY(-1px);
+}
+
+.contact-form .btn.btn--dark:active {
+    transform: translateY(0);
+}
+
+
+/* --------------------------------
+   SECTION INFOS PRATIQUES
+   -------------------------------- */
+.section.section--infos {
+    background-color: var(--beige100);
+    padding: 32px 24px 30px;
+    position: relative;
+}
+
+.section.section--infos::before {
+    content: none;
+}
+
+.section.section--infos .section__title {
+    font-family: var(--titre), sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--vert-500);
+    margin: 0 0 18px;
+}
+
+.section.section--infos p {
+    font-family: var(--texte-regular13), sans-serif;
+    font-size: 1.3rem;
+    color: var(--noir400);
+    line-height: 1.55;
+    margin: 0 0 12px;
+}
+
+.section.section--infos p strong {
+    font-family: var(--texte-gras13), sans-serif;
+    text-transform: uppercase;
+    color: var(--vert-500);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.section.section--infos::after {
+    content: "";
+    display: block;
+    width: 88%;
+    height: 3px;
+    margin: 26px auto 0;
+    background-color: var(--vert-500);
+}
+
+
+/* --------------------------------
+   SECTION RÉSEAUX SOCIAUX
+   -------------------------------- */
+.section.section--socials {
+    background-color: var(--beige100);
+    padding: 22px 24px 44px;
+    position: relative;
+}
+
+.section.section--socials::before {
+    content: none;
+}
+
+.section.section--socials .section__title {
+    font-family: var(--titre), sans-serif;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--vert-500);
+    margin: 0 0 24px;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    max-width: 240px;
+    margin: 0 auto 14px;
+}
+
+.socials a img {
+    display: block;
+    width: 44px;
+}
+
+.socials__tags {
+    display: flex;
+    justify-content: space-between;
+    max-width: 280px;
+    margin: 0 auto;
+    font-family: var(--texte-regular13), sans-serif;
+    font-size: 1.1rem;
+    color: var(--noir400);
+}
+
+.socials__tags p {
+    margin: 0;
+}
