@@ -1,0 +1,166 @@
+/* ==============================
+   PAGE ARTIST FOCUS — Echo Sonore
+   Mobile First
+   ============================== */
+
+.artist-focus {
+    background: var(--vert-500);
+    padding: 24px 18px 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artist-focus>* {
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.artist-focus__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 24px;
+    color: var(--beige100);
+    align-items: center;
+    text-align: center;
+}
+
+.artist-focus__intro h1 {
+    margin: 0;
+    font-family: var(--titre), sans-serif;
+    font-size: 3.0rem;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.artist-focus__intro h2 {
+    margin: 0;
+    font-family: var(--titre), sans-serif;
+    font-size: 2.4rem;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.artist-focus__main-image {
+    margin: 0 0 18px;
+    padding: 12px;
+    background: var(--beige100);
+    border-radius: 18px;
+    box-sizing: border-box;
+}
+
+.artist-focus__main-image img {
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.artist-focus__main-image figcaption {
+    margin-top: 10px;
+    font-family: var(--texte-regular13), sans-serif;
+    font-size: 1.2rem;
+    color: var(--vert-500);
+    text-align: center;
+}
+
+.artist-focus__resume {
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.artist-focus__resume h2 {
+    margin: 0 0 10px;
+    font-family: var(--titre), sans-serif;
+    font-size: 2.6rem;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--beige100);
+}
+
+.artist-focus__resume p {
+    margin: 0 0 12px;
+    font-family: var(--texte-regular13), sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: var(--beige100);
+}
+
+/* Carousel */
+.artist-focus__carousel {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto 24px;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+    display: grid;
+    grid-template-columns: 52px 1fr 52px;
+    align-items: center;
+    gap: 8px;
+}
+
+.carousel__btn {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    border: none;
+    background: var(--beige100);
+    color: var(--vert-500);
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.carousel__btn:active {
+    transform: translateY(0);
+}
+
+.carousel__image {
+    margin: 0;
+    padding: 0;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.carousel__image img {
+    display: block;
+    width: 100%;
+    max-width: 240px;
+    margin: 0 auto;
+    border-radius: 14px;
+    object-fit: cover;
+}
+
+.artist-focus__back {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.artist-focus__back .btn.btn--light {
+    background: var(--beige100);
+    color: var(--vert-500);
+    border: none;
+    padding: 10px 14px;
+    border-radius: 16px;
+    font-family: var(--texte-gras13), sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.artist-focus__back .btn.btn--light:hover {
+    transform: translateY(-1px);
+}
+
+.artist-focus__back .btn.btn--light:active {
+    transform: translateY(0);
+}

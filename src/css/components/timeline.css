@@ -1,0 +1,69 @@
+/* Chronology / timeline section */
+
+.timeline {
+    background: var(--vert300);
+    padding: 40px 30px 60px;
+    text-align: left;
+}
+
+.timeline .section__title {
+    font-family: var(--titre);
+    font-size: 36px;
+    line-height: 45px;
+    color: var(--beige100);
+    margin-bottom: 10px;
+}
+
+.timeline .section__desc {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--beige100);
+    margin-bottom: 30px;
+}
+
+.timeline__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.timeline__item {
+    background: var(--beige100);
+    border-radius: 25px;
+    padding: 25px 22px;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.timeline__year {
+    font-family: var(--titre);
+    font-size: 36px;
+    line-height: 45px;
+    color: var(--vert-500);
+    margin-bottom: 10px;
+}
+
+.timeline__desc {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--vert-500);
+    margin: 0;
+}
+
+.timeline__cta {
+    margin: 40px auto;
+    display: inline-flex;
+}
+
+.timeline .section__illustration--full img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}

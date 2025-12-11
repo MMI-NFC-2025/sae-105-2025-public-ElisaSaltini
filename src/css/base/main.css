@@ -1,0 +1,11 @@
+/* Base styles shared across the site */
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+.u-list-unstyled {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

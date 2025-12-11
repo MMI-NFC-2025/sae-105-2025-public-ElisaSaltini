@@ -1,0 +1,71 @@
+/* Generic section layout shared across pages */
+
+.section {
+    background: var(--beige100);
+    padding: 40px 30px;
+    text-align: left;
+}
+
+.section__title {
+    font-family: var(--titre);
+    font-size: 36px;
+    color: var(--vert-500);
+    margin-bottom: 10px;
+}
+
+.section__desc {
+    font-size: 13px;
+    line-height: 1.25;
+    font-weight: 700;
+    color: var(--noir400);
+    margin-bottom: 20px;
+}
+
+.section__illustration img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.section__illustration--full img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.section .btn {
+    margin-top: 10px;
+}
+
+.section+.section {
+    border-top: none;
+    padding-top: 60px;
+    position: relative;
+}
+
+.section.section--no-separator {
+    padding-top: 40px;
+}
+
+.section.section--no-separator::before {
+    display: none;
+}
+
+.section+.section::before {
+    content: "";
+    width: 80%;
+    height: 3px;
+    background: var(--vert-500);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.scene img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

@@ -1,31 +1,30 @@
-@import url(./base/main.css);
-@import url(./base/media.css);
+@import url("./vendors/normalize.css");
 
+@import url("./utils/variable.css");
 
-@import url(.components/bouton.css);
-@import url(.components/cardartistes.css);
-@import url(.components/cardprogramme.css);
-@import url(.components/cardscene.css);
-@import url(.components/carousselartistes.css);
-@import url(.components/carousselpartners.css);
-@import url(.components/hero.css);
-@import url(.components/menu.css);
+@import url("./base/main.css");
+@import url("./base/media.css");
 
-@import url(./layout/footer.css);
-@import url(./layout/header.css);
+@import url("./layout/header.css");
+@import url("./layout/footer.css");
+@import url("./layout/section.css");
 
-@import url(./pages/home.css);
+@import url("./components/bouton.css");
+@import url("./components/menu.css");
+@import url("./components/hero.css");
+@import url("./components/partners.css");
+@import url("./components/about.css");
+@import url("./components/timeline.css");
+@import url("./components/cardartistes.css");
+@import url("./components/cardprogramme.css");
+@import url("./components/cardscene.css");
+@import url("./components/carousselartiste.css");
 
-@import url(./utils/variable.css);
-
-@import url("/src/css/components/bouton.css");
-@import url("/src/css/components/menu.css");
-
-@import url("/src/css/pages/apropos.css");
-@import url("/src/css/pages/home.css");
-@import url("/src/css/pages/focusartisteburningspears.css");
-@import url("/src/css/pages/contact.css");
-@import url("/src/css/pages/programme.css");
-@import url("/src/css/pages/scene.css");
-@import url("/src/css/pages/infospratiques.css");
-@import url("/src/css/pages/artistes.css");
+@import url("./pages/apropos.css");
+@import url("./pages/programme.css");
+@import url("./pages/scene.css");
+@import url("./pages/infospratiques.css");
+@import url("./pages/artistes.css");
+@import url("./pages/scene-focus.css");
+@import url("./pages/artist-focus.css");
+@import url("./pages/contact.css");

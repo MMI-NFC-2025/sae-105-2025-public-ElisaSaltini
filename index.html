@@ -13,15 +13,15 @@
 
     <!-- HEADER -->
     <header class="header">
-    
+
         <!-- LOGO -->
         <a class="header__logo" href="/">ECHO SONORE</a>
-    
+
         <!-- BOUTON BURGER (ouvre la page menu) -->
         <button class="header__menu-btn" onclick="window.location.href='/menu.html'">
             <span></span><span></span><span></span>
         </button>
-    
+
     </header>
 
 
@@ -65,7 +65,7 @@
                 </p>
             </header>
 
-            <div class="section__illustration">
+            <div class="section__illustration section__illustration--full">
                 <img src="/assets/img/note.avif" alt="Notes de musique">
             </div>
 
@@ -81,7 +81,7 @@
                 </p>
             </header>
 
-            <div class="section__illustration">
+            <div class="section__illustration section__illustration--full">
                 <img src="/assets/img/etoiles.avif" alt="Étoiles">
             </div>
 
@@ -97,7 +97,7 @@
                 </p>
             </header>
 
-            <div class="section__illustration">
+            <div class="section__illustration section__illustration--full">
                 <img src="/assets/img/confetis.avif" alt="confetis">
             </div>
 
@@ -113,7 +113,7 @@
                 </p>
             </header>
 
-            <div class="section__illustration">
+            <div class="section__illustration section__illustration--full">
                 <img src="/assets/img/saxo.avif" alt="saxophone">
             </div>
 
@@ -126,36 +126,35 @@
         </section>
 
         <!-- SECTION PARTENAIRES -->
-    <section class="partners" id="partners">
-    
-        <header class="section__header">
-            <h2 class="section__title">Nos partenaires</h2>
-        </header>
-    
-        <section class="partners-carousel">
-    
-            <button class="carousel__btn carousel__btn--prev">←</button>
-    
-            <figure class="carousel__image">
-                <img src="/assets/svg/spotifySVG.svg" data-images="/assets/svg/spotifySVG.svg,
-                                 /assets/svg/chamastacosSVG.svg,
-                                 /assets/svg/heinekenSVG.svg,
-                                 /assets/svg/starbucksSVG.svg" alt="Logos des partenaires">
-            </figure>
-    
-            <button class="carousel__btn carousel__btn--next">→</button>
-    
+        <section class="section partners" id="partners">
+            <header class="section__header">
+                <h2 class="section__title">Nos partenaires</h2>
+            </header>
+
+            <div class="partners__carousel">
+                <button class="partners__control partners__control--prev" type="button"
+                    aria-label="Partenaire précédent">←</button>
+
+                <figure class="partners__logo">
+                    <img class="partners__image" src="/assets/svg/spotifySVG.svg" data-images="/assets/svg/spotifySVG.svg,
+                                     /assets/svg/chamastacosSVG.svg,
+                                     /assets/svg/heinekenSVG.svg,
+                                     /assets/svg/starbucksSVG.svg" alt="Logos des partenaires">
+                </figure>
+
+                <button class="partners__control partners__control--next" type="button"
+                    aria-label="Partenaire suivant">→</button>
+            </div>
         </section>
-    </section>
 
 
     </main>
 
     <!-- FOOTER -->
     <footer class="footer">
-    
+
         <h2 class="footer__slogan">« VIBREZ AU RYTHME DE LA NATURE »</h2>
-    
+
         <nav class="footer__nav">
             <ul class="footer__list u-list-unstyled">
                 <li><a href="/">Accueil</a></li>
@@ -167,29 +166,28 @@
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
         </nav>
-    
+
         <div class="footer__socials">
             <a href="#"><img src="/assets/svg/Vector.svg" alt="Twitter"></a>
             <a href="#"><img src="/assets/svg/instagram 1.svg" alt="Instagram"></a>
             <a href="#"><img src="/assets/svg/facebook 1.svg" alt="Facebook"></a>
         </div>
-    
+
         <div class="footer__bottom">
-    
+
             <div class="footer__left">
                 <a href="#">mentions légales</a>
                 <p>contact@echosonore.fr</p>
             </div>
-    
+
             <p class="footer__copy">© Echo Sonore</p>
-    
+
         </div>
-    
+
     </footer>
 
 
     <!-- JS -->
-    <script src="/src/js/menu.js"></script>
     <script src="/src/js/menu.js"></script>
     <script src="/src/js/partners-carousel.js"></script>
 

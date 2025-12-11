@@ -1,0 +1,47 @@
+/* Partners section and carousel */
+
+.partners {
+    background: var(--vert300);
+    padding: 50px 25px;
+    text-align: center;
+}
+
+.partners .section__title {
+    color: var(--vert-500);
+}
+
+.partners__carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.partners__control {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: none;
+    background: var(--vert-500);
+    color: var(--vert300);
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.partners__logo {
+    margin: 0;
+}
+
+.partners__image {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: var(--beige100);
+    object-fit: contain;
+    padding: 12px;
+    display: block;
+}

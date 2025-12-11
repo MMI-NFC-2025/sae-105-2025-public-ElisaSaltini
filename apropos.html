@@ -13,22 +13,22 @@
 
     <!-- HEADER -->
     <header class="header">
-    
+
         <!-- LOGO -->
         <a class="header__logo" href="/">ECHO SONORE</a>
-    
+
         <!-- BOUTON BURGER (ouvre la page menu) -->
         <button class="header__menu-btn" onclick="window.location.href='/menu.html'">
             <span></span><span></span><span></span>
         </button>
-    
+
     </header>
 
 
     <main>
 
         <!-- SECTION À PROPOS -->
-        <section class="section" id="apropos">
+        <section class="section section--no-separator about" id="apropos">
             <header class="section__header">
                 <h2 class="section__title">À propos</h2>
                 <p class="section__desc">
@@ -37,58 +37,65 @@
                 </p>
             </header>
 
-            <div class="section__illustration">
+            <div class="section__illustration section__illustration--full">
                 <img src="/assets/img/festivalapropos1img.avif" alt="Ambiance du festival">
             </div>
         </section>
 
         <!-- SECTION CHRONOLOGIE -->
-        <section class="section" id="chronologie">
+        <section class="section section--no-separator timeline" id="chronologie">
             <header class="section__header">
                 <h2 class="section__title">Chronologie</h2>
                 <p class="section__desc">Retracez l’histoire de notre festival !</p>
             </header>
 
-            <ul class="chrono u-list-unstyled">
+            <ul class="timeline__list">
 
-                <li class="chrono-card">
-                    <h3 class="chrono-card__year">2024</h3>
-                    <p class="chrono-card__desc">
-                        Tout commence par une réflexion autour du concept : un festival de musique afro à Audincourt, qui célèbre la richesse et
+                <li class="timeline__item">
+                    <h3 class="timeline__year">2024</h3>
+                    <p class="timeline__desc">
+                        Tout commence par une réflexion autour du concept : un festival de musique afro à Audincourt,
+                        qui célèbre la richesse et
                         la diversité des cultures africaines, avec une ambiance festive et conviviale.
                     </p>
                 </li>
 
-                <li class="chrono-card">
-                    <h3 class="chrono-card__year">2025</h3>
-                    <p class="chrono-card__desc">
-                        Cette année fut consacrée à l’organisation : choix du lieu, programmation des artistes, partenariats, logistique et
-                        communication. Chaque détail est pensé pour offrir une expérience unique aux futurs festivaliers.
+                <li class="timeline__item">
+                    <h3 class="timeline__year">2025</h3>
+                    <p class="timeline__desc">
+                        Cette année fut consacrée à l’organisation : choix du lieu, programmation des artistes,
+                        partenariats, logistique et
+                        communication. Chaque détail est pensé pour offrir une expérience unique aux futurs
+                        festivaliers.
                     </p>
                 </li>
 
-                <li class="chrono-card">
-                    <h3 class="chrono-card__year">2026</h3>
-                    <p class="chrono-card__desc">
-                        Le festival ouvre enfin ses portes ! Une journée (ou un week-end) de concerts, ateliers, food trucks et rencontres
-                        culturelles qui marque le lancement officiel de l’événement. L’énergie et l’enthousiasme du public feront de cette
+                <li class="timeline__item">
+                    <h3 class="timeline__year">2026</h3>
+                    <p class="timeline__desc">
+                        Le festival ouvre enfin ses portes ! Une journée (ou un week-end) de concerts, ateliers, food
+                        trucks et rencontres
+                        culturelles qui marque le lancement officiel de l’événement. L’énergie et l’enthousiasme du
+                        public feront de cette
                         première édition un moment mémorable.
                     </p>
                 </li>
 
-                <li class="chrono-card">
-                    <h3 class="chrono-card__year">2027</h3>
-                    <p class="chrono-card__desc">
-                        L’objectif : la prochaine édition, plus grande et encore plus riche en découvertes musicales et culturelles. Le festival
-                        continue de grandir et de s’ancrer comme un rendez-vous incontournable de la scène afro dans la région.
+                <li class="timeline__item">
+                    <h3 class="timeline__year">2027</h3>
+                    <p class="timeline__desc">
+                        L’objectif : la prochaine édition, plus grande et encore plus riche en découvertes musicales et
+                        culturelles. Le festival
+                        continue de grandir et de s’ancrer comme un rendez-vous incontournable de la scène afro dans la
+                        région.
                     </p>
                 </li>
 
             </ul>
 
-            <a href="/artistes.html" class="btn">Voir les artistes</a>
+            <a href="/artistes.html" class="btn btn--dark timeline__cta">Voir les artistes</a>
 
-            <div class="section__illustration">
+            <div class="section__illustration section__illustration--full">
                 <img src="/assets/img/festivalapropos2img.avif" alt="Concert du festival">
             </div>
         </section>
@@ -98,9 +105,9 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-    
+
         <h2 class="footer__slogan">« VIBREZ AU RYTHME DE LA NATURE »</h2>
-    
+
         <nav class="footer__nav">
             <ul class="footer__list u-list-unstyled">
                 <li><a href="/">Accueil</a></li>
@@ -112,24 +119,24 @@
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
         </nav>
-    
+
         <div class="footer__socials">
             <a href="#"><img src="/assets/svg/Vector.svg" alt="Twitter"></a>
             <a href="#"><img src="/assets/svg/instagram 1.svg" alt="Instagram"></a>
             <a href="#"><img src="/assets/svg/facebook 1.svg" alt="Facebook"></a>
         </div>
-    
+
         <div class="footer__bottom">
-    
+
             <div class="footer__left">
                 <a href="#">mentions légales</a>
                 <p>contact@echosonore.fr</p>
             </div>
-    
+
             <p class="footer__copy">© Echo Sonore</p>
-    
+
         </div>
-    
+
     </footer>
 
     <!-- JS -->

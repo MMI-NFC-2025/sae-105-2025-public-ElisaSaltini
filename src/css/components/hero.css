@@ -1,0 +1,65 @@
+/* Hero block */
+
+.hero {
+    background: var(--vert-500);
+    color: var(--beige100);
+    padding: 40px 30px 140px;
+    text-align: left;
+}
+
+.hero__logo img {
+    width: 85%;
+    max-width: 300px;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+.hero__subtitle {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    margin: 10px 0 20px;
+}
+
+.hero__dates {
+    background: var(--vert300);
+    border-radius: 20px;
+    padding: 25px 20px;
+    width: 100%;
+    max-width: 280px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.hero__bigdate {
+    font-family: var(--titre);
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.hero__place {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--vert-500);
+    text-transform: uppercase;
+}
+
+.hero__introtitle {
+    font-family: var(--titre);
+    font-size: 36px;
+    line-height: 45px;
+    margin: 40px 0 20px;
+}
+
+.hero__intro {
+    font-size: 13px;
+    font-weight: 700;
+    width: 85%;
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    margin-top: 10px;
+}
