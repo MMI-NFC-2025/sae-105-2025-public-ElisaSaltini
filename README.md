@@ -15,3 +15,5 @@
 
 
 Je vous informe ici que mon compte étudiant Infomaniak a été refusé pour cause de carte d'identité invalide. Tout les document concernant ce désagrément ont été envoyés à monsieur Pracht via la boite mail universitaire. Merci de bien vouloir prendre en compte ce refus lors de ma notation.
+
+Il y a moins de push et de commits que prevus parce que j'ai commencé le developpement dans un autre fichier.
