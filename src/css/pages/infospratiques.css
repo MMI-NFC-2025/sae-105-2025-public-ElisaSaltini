@@ -1,0 +1,145 @@
+/* ==============================
+   PAGE INFOS PRATIQUES — Echo Sonore
+   Mobile First
+   ============================== */
+
+/* INTRO */
+.infos {
+    background: var(--vert300);
+}
+
+.infos__intro {
+    background: var(--beige100);
+    padding: 32px 24px 28px;
+}
+
+.infos__intro .section__title {
+    margin: 0 0 12px;
+    font-family: var(--titre), sans-serif;
+    font-size: 2.8rem;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--vert-500);
+}
+
+.infos__intro .section__desc {
+    margin: 0;
+    font-family: var(--texte-regular13), sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.35;
+    color: var(--noir400);
+    max-width: 260px;
+}
+
+/* Blocks spacing */
+.infos__block {
+    padding: 34px 24px 0;
+}
+
+.infos__block+.infos__block {
+    padding-top: 36px;
+}
+
+.section__subtitle {
+    margin: 0 0 18px;
+    font-family: var(--titre), sans-serif;
+    font-size: 2.2rem;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--vert-500);
+}
+
+/* Buttons grid */
+.infos-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.infos-btn {
+    width: 100%;
+    background: var(--beige100);
+    color: var(--vert-500);
+    border: none;
+    padding: 14px 18px;
+    border-radius: 18px;
+    font-family: var(--titre), sans-serif;
+    font-size: 2.2rem;
+    line-height: 1.05;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    text-align: left;
+    box-shadow: 0 0 0 2px var(--beige100);
+}
+
+/* Price buttons */
+.infos-price-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: none;
+    font-size: 2.6rem;
+}
+
+.infos-price-btn span {
+    font-family: var(--titre), sans-serif;
+}
+
+.infos-price-btn strong {
+    font-family: var(--titre), sans-serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+/* Separators */
+.infos__block::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: var(--vert-500);
+    margin: 34px -4px 0;
+}
+
+/* FAQ */
+.faq {
+    padding-bottom: 44px;
+}
+
+.faq-item {
+    background: var(--beige100);
+    border-radius: 16px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 14px 16px;
+    font-family: var(--texte-gras13), sans-serif;
+    font-size: 1.3rem;
+    text-align: left;
+    color: var(--vert-500);
+    position: relative;
+}
+
+.faq-question::after {
+    content: "▼";
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: var(--vert-500);
+}
+
+.faq-answer {
+    padding: 0 16px 12px;
+    font-family: var(--texte-regular13), sans-serif;
+    font-size: 1.2rem;
+    color: var(--vert-500);
+    line-height: 1.5;
+}
