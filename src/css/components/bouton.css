@@ -1,0 +1,52 @@
+/************************************
+ * BOUTONS — version Figma
+ ************************************/
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 12px 20px;
+    border-radius: 25px;
+
+    font-size: 12px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    /* ← Texte en MAJ */
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+/* Icône flèche */
+.btn__icon {
+    width: 19px;
+    height: 11px;
+    background-color: currentColor;
+    /* Teinte dynamique */
+    mask: url("/assets/svg/fleche.svg") no-repeat center / contain;
+    -webkit-mask: url("/assets/svg/fleche.svg") no-repeat center / contain;
+}
+
+/* --- Bouton clair --- */
+.btn--light {
+    background: var(--beige100);
+    color: var(--vert-500);
+}
+
+.btn--light:hover {
+    opacity: 0.8;
+}
+
+/* --- Bouton foncé --- */
+.btn--dark {
+    background: var(--vert-500);
+    color: var(--beige100);
+}
+
+.btn--dark:hover {
+    opacity: 0.85;
+}

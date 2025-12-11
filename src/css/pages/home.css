@@ -1,0 +1,197 @@
+/************************************
+ * PAGE D’ACCUEIL — HOME (FIDÈLE FIGMA)
+************************************/
+
+/* Police par défaut */
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+
+/* ================================
+   HERO SECTION
+================================ */
+
+.hero {
+    background: var(--vert-500);
+    color: var(--beige100);
+    padding: 40px 30px 140px;
+    text-align: left;
+}
+
+.hero__logo img {
+    width: 85%;
+    max-width: 300px;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+.hero__subtitle {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    margin: 10px 0 20px;
+}
+
+.hero__dates {
+    background: var(--vert300);
+    border-radius: 20px;
+    padding: 25px 20px;
+    width: 100%;
+    max-width: 280px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.hero__bigdate {
+    font-family: var(--titre);
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.hero__place {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--vert-500);
+    text-transform: uppercase;
+}
+
+.hero__introtitle {
+    font-family: var(--titre);
+    font-size: 36px;
+    line-height: 45px;
+    margin: 40px 0 20px;
+}
+
+.hero__intro {
+    font-size: 13px;
+    font-weight: 700;
+    width: 85%;
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+
+/* Bouton */
+.hero .btn {
+    margin-top: 10px;
+}
+
+
+/* ================================
+   IMAGE SCÈNE (PLEINE LARGEUR)
+================================ */
+
+.scene img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* ================================
+   SECTIONS NORMALES
+================================ */
+
+.section {
+    background: var(--beige100);
+    padding: 40px 30px;
+    text-align: left;
+}
+
+/* Titres */
+.section__title {
+    font-family: var(--titre);
+    font-size: 36px;
+    color: var(--vert-500);
+    margin-bottom: 10px;
+}
+
+/* Sous-texte */
+.section__desc {
+    font-size: 13px;
+    line-height: 1.25;
+    font-weight: 700;
+    color: var(--noir400);
+    margin-bottom: 20px;
+}
+
+/* Illustration */
+.section__illustration img {
+    width: 80px;
+    /* plus proche de ta maquette */
+    margin-bottom: 20px;
+}
+
+/* Boutons */
+.section .btn {
+    margin-top: 10px;
+}
+
+
+/* ================================
+   SÉPARATEURS ENTRE SECTIONS
+   → Figma : lignes de 80% centrées
+================================ */
+
+.section+.section {
+    border-top: none;
+    padding-top: 60px;
+    position: relative;
+}
+
+.section+.section::before {
+    content: "";
+    width: 80%;
+    height: 3px;
+    background: var(--vert-500);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* ================================
+   PARTENAIRES
+================================ */
+
+.partners {
+    background: var(--vert300);
+    padding: 50px 25px;
+    text-align: center;
+}
+
+.partners .section__title {
+    color: var(--vert-500);
+}
+
+.partners-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.carousel__btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: none;
+    background: var(--vert-500);
+    color: var(--vert300);
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel__image img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: var(--beige100);
+    object-fit: contain;
+    padding: 12px;
+}

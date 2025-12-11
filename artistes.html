@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo Sonore — Artistes</title>
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+    
+        <!-- LOGO -->
+        <a class="header__logo" href="/">ECHO SONORE</a>
+    
+        <!-- BOUTON BURGER (ouvre la page menu) -->
+        <button class="header__menu-btn" onclick="window.location.href='/menu.html'">
+            <span></span><span></span><span></span>
+        </button>
+    
+    </header>
+
+
+    <main>
+
+        <!-- INTRO ARTISTES -->
+        <section class="section section-artistes">
+            <header class="section__header">
+                <h1 class="section__title">ARTISTES</h1>
+                <p class="section__desc">
+                    Découvrez les artistes présents à notre événement&nbsp;!
+                </p>
+            </header>
+        </section>
+
+        <!-- SECTION DATES / FILTRES -->
+        <section class="section section-artistes__dates">
+            <h2 class="section__subtitle">DATE</h2>
+
+            <div class="artists-filters" role="tablist" aria-label="Filtrer les artistes par date">
+                <button type="button" class="artists-filters__btn is-active" data-filter-day="28" role="tab"
+                    aria-selected="true">
+                    28 octobre 2026
+                </button>
+
+                <button type="button" class="artists-filters__btn" data-filter-day="29" role="tab"
+                    aria-selected="false">
+                    29 octobre 2026
+                </button>
+
+                <button type="button" class="artists-filters__btn" data-filter-day="30" role="tab"
+                    aria-selected="false">
+                    30 octobre 2026
+                </button>
+
+                <button type="button" class="artists-filters__btn" data-filter-day="31" role="tab"
+                    aria-selected="false">
+                    31 octobre 2026
+                </button>
+            </div>
+        </section>
+
+        <!-- LISTE DES ARTISTES (tous les jours, filtrés en JS) -->
+        <section class="section section-artistes__list">
+            <ul class="artists-list u-list-unstyled">
+
+                <!-- JOUR 28 OCTOBRE -->
+                <li class="artist-card" data-day="28">
+                    <figure class="artist-card__media">
+                        <img src="/assets/img/burningspearimg.avif" alt="Burning Spear">
+                    </figure>
+                    <h3 class="artist-card__name">
+                        <a href="/focusartisteburningspears.html">Burning Spear</a>
+                    </h3>
+                    <p class="artist-card__desc">Légende roots jamaïque</p>
+                </li>
+
+                <li class="artist-card" data-day="28">
+                    <figure class="artist-card__media">
+                        <img src="/assets/img/danakilimg.avif" alt="Danakil">
+                    </figure>
+                    <h3 class="artist-card__name">Danakil</h3>
+                    <p class="artist-card__desc">Reggae engagé français</p>
+                </li>
+
+                <li class="artist-card" data-day="28">
+                    <figure class="artist-card__media">
+                        <img src="/assets/img/tairoimg.avif" alt="Taïro">
+                    </figure>
+                    <h3 class="artist-card__name">Taïro</h3>
+                    <p class="artist-card__desc">Lover reggae français</p>
+                </li>
+
+                <li class="artist-card" data-day="28">
+                    <figure class="artist-card__media">
+                        <img src="/assets/img/jahlilimg.avif" alt="Jah Lil">
+                    </figure>
+                    <h3 class="artist-card__name">Jah Lil</h3>
+                    <p class="artist-card__desc">Reggae roots puissant</p>
+                </li>
+
+                <li class="artist-card" data-day="28">
+                    <figure class="artist-card__media">
+                        <img src="/assets/img/youthieimg.avif" alt="Youthie">
+                    </figure>
+                    <h3 class="artist-card__name">Youthie</h3>
+                    <p class="artist-card__desc">Dub flûte énergique</p>
+                </li>
+
+                <li class="artist-card" data-day="28">
+                    <figure class="artist-card__media">
+                        <img src="/assets/img/pempelemimg.avif" alt="Pempelem">
+                    </figure>
+                    <h3 class="artist-card__name">Pempelem</h3>
+                    <p class="artist-card__desc">Grooves afro festifs</p>
+                </li>
+
+                <li class="artist-card" data-day="28">
+                    <figure class="artist-card__media">
+                        <img src="/assets/img/faunestepperimg.avif" alt="Le Faune Stepper">
+                    </figure>
+                    <h3 class="artist-card__name">Le Faune Stepper</h3>
+                    <p class="artist-card__desc">Dub méditatif lourd</p>
+                </li>
+
+                <!-- JOUR 29 OCTOBRE -->
+                <li class="artist-card" data-day="29">
+                    <figure class="artist-card__media">
+                        <img src="/assets/img/fonkyfamilyimg.avif" alt="Fonky Family">
+                    </figure>
+                    <h3 class="artist-card__name">Fonky Family</h3>
+                    <p class="artist-card__desc">Rap marseillais culte</p>
+                </li>
+
+                <li class="artist-card" data-day="29">
+                    <figure class="artist-card__media">
+                        <img src="/assets/img/bigaranximg.avif" alt="Biga*Ranx">
+                    </figure>
+                    <h3 class="artist-card__name">Biga*Ranx</h3>
+                    <p class="artist-card__desc">Dub moderne énergique</p>
+                </li>
+
+                <li class="artist-card" data-day="29">
+                    <figure class="artist-card__media">
+                        <img src="/assets/img/ayoimg.avif" alt="Ayo">
+                    </figure>
+                    <h3 class="artist-card__name">
+                        <a href="/focusartisteayo.html">Ayo</a>
+                    </h3>
+                    <p class="artist-card__desc">Soul folk lumineuse</p>
+                </li>
+
+                <li class="artist-card" data-day="29">
+                    <figure class="artist-card__media">
+                        <img src="/assets/img/bimimg.avif" alt="Bim">
+                    </figure>
+                    <h3 class="artist-card__name">Bim</h3>
+                    <p class="artist-card__desc">Riddims reggae solides</p>
+                </li>
+
+                <li class="artist-card" data-day="29">
+                    <figure class="artist-card__media">
+                        <img src="/assets/img/wokimg.avif" alt="1 Woks">
+                    </figure>
+                    <h3 class="artist-card__name">1 Woks</h3>
+                    <p class="artist-card__desc">Sound system militant</p>
+                </li>
+
+                <li class="artist-card" data-day="29">
+                    <figure class="artist-card__media">
+                        <img src="/assets/img/maxxoimg.avif" alt="Maxxo">
+                    </figure>
+                    <h3 class="artist-card__name">Maxxo</h3>
+                    <p class="artist-card__desc">Reggae roots français</p>
+                </li>
+
+                <li class="artist-card" data-day="29">
+                    <figure class="artist-card__media">
+                        <img src="/assets/img/obidayaimg.avif" alt="Obidaya">
+                    </figure>
+                    <h3 class="artist-card__name">Obidaya</h3>
+                    <p class="artist-card__desc">Roots harmonies vocales</p>
+                </li>
+
+                <!-- JOUR 30 OCTOBRE -->
+                <li class="artist-card" data-day="30">
+                    <figure class="artist-card__media">
+                        <img src="/assets/img/mellowmoodimg.avif" alt="Mellow Mood">
+                    </figure>
+                    <h3 class="artist-card__name">Mellow Mood</h3>
+                    <p class="artist-card__desc">Reggae italien moderne</p>
+                </li>
+
+                <li class="artist-card" data-day="30">
+                    <figure class="artist-card__media">
+                        <img src="/assets/img/awafallimg.avif" alt="Awa Fall">
+                    </figure>
+                    <h3 class="artist-card__name">Awa Fall</h3>
+                    <p class="artist-card__desc">Soul reggae explosive</p>
+                </li>
+
+                <li class="artist-card" data-day="30">
+                    <figure class="artist-card__media">
+                        <img src="/assets/img/kankaimg.avif" alt="Kanka">
+                    </figure>
+                    <h3 class="artist-card__name">Kanka</h3>
+                    <p class="artist-card__desc">Dub stepper massif</p>
+                </li>
+
+                <li class="artist-card" data-day="30">
+                    <figure class="artist-card__media">
+                        <img src="/assets/img/rakoonimg.avif" alt="Rakoon">
+                    </figure>
+                    <h3 class="artist-card__name">Rakoon</h3>
+                    <p class="artist-card__desc">Électro-dub planante</p>
+                </li>
+
+                <li class="artist-card" data-day="30">
+                    <figure class="artist-card__media">
+                        <img src="/assets/img/naijahimg.avif" alt="Nai-Jah">
+                    </figure>
+                    <h3 class="artist-card__name">Nai-Jah</h3>
+                    <p class="artist-card__desc">Afrofusion consciente</p>
+                </li>
+
+                <li class="artist-card" data-day="30">
+                    <figure class="artist-card__media">
+                        <img src="/assets/img/dabankoimg.avif" alt="Dubanko &amp; Woody Vibe">
+                    </figure>
+                    <h3 class="artist-card__name">Dubanko &amp; Woody Vibe</h3>
+                    <p class="artist-card__desc">Dub organique futuriste</p>
+                </li>
+
+                <li class="artist-card" data-day="30">
+                    <figure class="artist-card__media">
+                        <img src="/assets/img/omeganebulaimg.avif" alt="Omega Nebula">
+                    </figure>
+                    <h3 class="artist-card__name">Omega Nebula</h3>
+                    <p class="artist-card__desc">Space dub futur</p>
+                </li>
+
+                <!-- JOUR 31 OCTOBRE -->
+                <li class="artist-card" data-day="31">
+                    <figure class="artist-card__media">
+                        <img src="/assets/img/bcucimg.avif" alt="BCUC">
+                    </figure>
+                    <h3 class="artist-card__name">BCUC</h3>
+                    <p class="artist-card__desc">Afro-punk sud-africain</p>
+                </li>
+
+                <li class="artist-card" data-day="31">
+                    <figure class="artist-card__media">
+                        <img src="/assets/img/maraboutageimg.avif" alt="Maraboutage">
+                    </figure>
+                    <h3 class="artist-card__name">
+                        <a href="/focusartistemaraboutage.html">Maraboutage</a>
+                    </h3>
+                    <p class="artist-card__desc">Fusion afro-électro</p>
+                </li>
+
+                <li class="artist-card" data-day="31">
+                    <figure class="artist-card__media">
+                        <img src="/assets/img/kybbaimg.avif" alt="KYBBA">
+                    </figure>
+                    <h3 class="artist-card__name">KYBBA</h3>
+                    <p class="artist-card__desc">Dancehall digital global</p>
+                </li>
+
+                <li class="artist-card" data-day="31">
+                    <figure class="artist-card__media">
+                        <img src="/assets/img/minimanimg.avif" alt="Miniman &amp; Ksanti">
+                    </figure>
+                    <h3 class="artist-card__name">Miniman &amp; Ksanti</h3>
+                    <p class="artist-card__desc">Dub stepper profond</p>
+                </li>
+
+                <li class="artist-card" data-day="31">
+                    <figure class="artist-card__media">
+                        <img src="/assets/img/mexicanstepperimg.avif" alt="Mexican Steppers">
+                    </figure>
+                    <h3 class="artist-card__name">Mexican Steppers</h3>
+                    <p class="artist-card__desc">Dub mexicain hypnotique</p>
+                </li>
+
+                <li class="artist-card" data-day="31">
+                    <figure class="artist-card__media">
+                        <img src="/assets/img/dawahifiimg.avif" alt="Dawa Hifi">
+                    </figure>
+                    <h3 class="artist-card__name">Dawa Hifi</h3>
+                    <p class="artist-card__desc">Dub sound system</p>
+                </li>
+
+            </ul>
+
+            <!-- BOUTON BILLETTERIE -->
+            <div class="artists-cta">
+                <a href="#" class="btn btn--light">
+                    Je prends mes billets&nbsp;!
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+    
+        <h2 class="footer__slogan">« VIBREZ AU RYTHME DE LA NATURE »</h2>
+    
+        <nav class="footer__nav">
+            <ul class="footer__list u-list-unstyled">
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/apropos.html">À propos</a></li>
+                <li><a href="/programme.html">Programme</a></li>
+                <li><a href="/artistes.html">Artistes</a></li>
+                <li><a href="/scene.html">Scènes</a></li>
+                <li><a href="/infospratiques.html">Infos pratiques</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    
+        <div class="footer__socials">
+            <a href="#"><img src="/assets/svg/Vector.svg" alt="Twitter"></a>
+            <a href="#"><img src="/assets/svg/instagram 1.svg" alt="Instagram"></a>
+            <a href="#"><img src="/assets/svg/facebook 1.svg" alt="Facebook"></a>
+        </div>
+    
+        <div class="footer__bottom">
+    
+            <div class="footer__left">
+                <a href="#">mentions légales</a>
+                <p>contact@echosonore.fr</p>
+            </div>
+    
+            <p class="footer__copy">© Echo Sonore</p>
+    
+        </div>
+    
+    </footer>
+
+    <!-- JS -->
+    <script src="/src/js/artistes.js"></script>
+    <script src="/src/js/menu.js"></script>
+
+</body>
+
+</html>

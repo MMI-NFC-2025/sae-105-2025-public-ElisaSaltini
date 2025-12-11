@@ -1,0 +1,164 @@
+/************************************
+ * PAGE À PROPOS — APROPOS.CSS
+ ***********************************/
+
+/* Applique Helvetica partout dans la page // FIX */
+#apropos,
+#apropos *,
+#chronologie,
+#chronologie * {
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
+    /* Enlève soulignement du bouton // FIX */
+}
+
+/* ================================
+   SUPPRESSION DU TRAIT ENTRE SECTIONS // FIX
+================================ */
+
+.section+.section {
+    border-top: none !important;
+}
+
+/* ================================
+   CONTENEUR GLOBAL
+================================ */
+
+#apropos {
+    background: var(--beige100);
+    padding: 40px 30px 60px;
+    text-align: left;
+}
+
+/* Titre */
+#apropos .section__title {
+    font-family: var(--titre);
+    font-size: 36px;
+    line-height: 45px;
+    color: var(--vert-500);
+    margin-bottom: 10px;
+}
+
+/* Description */
+#apropos .section__desc {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--vert-500);
+    line-height: 1.2;
+    max-width: 260px;
+}
+
+/* Illustration — SUPPRESSION DES MARGES // FIX */
+#apropos .section__illustration img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    margin: 0;
+    /* FIX */
+    padding: 0;
+    /* FIX */
+    display: block;
+}
+
+
+/* ================================
+   SECTION CHRONOLOGIE
+================================ */
+
+#chronologie {
+    background: var(--vert300);
+    padding: 40px 30px 60px;
+    text-align: left;
+}
+
+/* Titre */
+#chronologie .section__title {
+    font-family: var(--titre);
+    font-size: 36px;
+    line-height: 45px;
+    color: var(--beige100);
+    margin-bottom: 10px;
+}
+
+/* Sous-texte */
+#chronologie .section__desc {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--beige100);
+    margin-bottom: 30px;
+}
+
+/* ================================
+   CARDS DE LA CHRONOLOGIE
+================================ */
+
+.chrono {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0;
+}
+
+.chrono-card {
+    background: var(--beige100);
+    border-radius: 25px;
+    padding: 25px 22px;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+/* Année */
+.chrono-card__year {
+    font-family: var(--titre);
+    font-size: 36px;
+    line-height: 45px;
+    color: var(--vert-500);
+    margin-bottom: 10px;
+}
+
+/* Texte */
+.chrono-card__desc {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--vert-500);
+}
+
+/* ================================
+   BOUTON "VOIR LES ARTISTES"
+   (NE MODIFIE PAS LE STYLE DU BOUTON)
+================================ */
+
+#chronologie .btn {
+    margin: 40px auto;
+    display: inline-flex;
+}
+
+/* ================================
+   SECONDE IMAGE — SUPPRESSION MARGES // FIX
+================================ */
+
+#chronologie .section__illustration img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    margin: 0;
+    /* FIX */
+    padding: 0;
+    /* FIX */
+}
+
+/****************************************
+   AJUSTEMENTS GÉNÉRAUX
+*****************************************/
+
+.section__header {
+    margin-bottom: 20px;
+}
+
+.u-list-unstyled {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

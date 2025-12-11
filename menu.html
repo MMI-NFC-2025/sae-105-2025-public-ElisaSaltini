@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu — Echo Sonore</title>
+
+    <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+
+<body class="menu-page">
+
+    <!-- HEADER MENU -->
+    <header class="menu-header">
+        <a href="/" class="menu-header__logo">ECHO SONORE</a>
+
+        <button class="menu-header__close" aria-label="Fermer le menu">
+        </button>
+    </header>
+
+    <!-- CONTENU DU MENU -->
+    <main class="menu-content">
+
+        <nav class="menu-nav">
+            <ul>
+                <li><a href="/">ACCEUIL</a></li>
+                <li><a href="/apropos.html">À PROPOS</a></li>
+                <li><a href="/programme.html">PROGRAMME</a></li>
+                <li><a href="/artistes.html">ARTISTES</a></li>
+                <li><a href="/scene.html">SCÈNE</a></li>
+                <li><a href="/infospratiques.html">INFOS PRATIQUES</a></li>
+                <li><a href="/contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <hr class="menu-separator">
+
+        <div class="menu-socials">
+            <img src="/assets/svg/Vector.svg" alt="Twitter">
+            <img src="/assets/svg/instagram 1.svg" alt="Instagram">
+            <img src="/assets/svg/facebook 1.svg" alt="Facebook">
+        </div>
+
+        <div class="menu-footer">
+            <p>mentions légales</p>
+            <p>contact@echosonore.fr</p>
+            <p>© Echo Sonore</p>
+        </div>
+
+    </main>
+
+    <!-- JS -->
+    <script>
+        document.querySelector(".menu-header__close").addEventListener("click", () => {
+            history.back(); // retourne à la page d’avant
+        });
+    </script>
+
+</body>
+
+</html>

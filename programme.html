@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo Sonore — Programme</title>
+
+    <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+    
+        <!-- LOGO -->
+        <a class="header__logo" href="/">ECHO SONORE</a>
+    
+        <!-- BOUTON BURGER (ouvre la page menu) -->
+        <button class="header__menu-btn" onclick="window.location.href='/menu.html'">
+            <span></span><span></span><span></span>
+        </button>
+    
+    </header>
+
+
+    <!-- TITRE PRINCIPAL -->
+    <section class="page-header page-header--program">
+        <h1 class="page-header__title">PROGRAMME</h1>
+        <p class="page-header__subtitle">
+            Découvrez les activités qui vous seront proposées lors de notre événement !
+        </p>
+    </section>
+
+    <!-- CONTENU PROGRAMME -->
+    <main class="program">
+
+        <!-- ATELIER MAQUILLAGE -->
+        <section class="program-section">
+            <h2 class="program-section__title">ATELIER MAQUILLAGE</h2>
+
+            <figure class="program-section__image">
+                <img src="/assets/img/maquillageimg.avif" alt="Atelier maquillage">
+            </figure>
+
+            <p class="program-section__text">
+                Venez vous faire maquiller et repartez prêts à briller au cœur du festival !
+            </p>
+        </section>
+
+        <!-- BUVETTE -->
+        <section class="program-section">
+            <h2 class="program-section__title">BUVETTE</h2>
+
+            <figure class="program-section__image">
+                <img src="/assets/img/buvetteimg.avif" alt="Buvette festival">
+            </figure>
+
+            <p class="program-section__text">
+                Venez vous rafraîchir à la buvette : boissons fraîches, bonne ambiance et énergie pour continuer la fête
+                !
+            </p>
+        </section>
+
+        <!-- STAND DE NOURRITURE -->
+        <section class="program-section">
+            <h2 class="program-section__title">STAND DE NOURRITURE</h2>
+
+            <figure class="program-section__image">
+                <img src="/assets/img/nourritureimg.avif" alt="Stand de nourriture">
+            </figure>
+
+            <p class="program-section__text">
+                Venez savourer une cuisine vegan maison, saine et colorée, idéale pour continuer la fête le ventre
+                léger.
+            </p>
+        </section>
+
+        <!-- STAND PHOTO -->
+        <section class="program-section">
+            <h2 class="program-section__title">STAND PHOTO</h2>
+
+            <figure class="program-section__image">
+                <img src="/assets/img/photoimg.avif" alt="Stand photo">
+            </figure>
+
+            <p class="program-section__text">
+                Venez immortaliser votre passage au festival : posez au stand photo et repartez avec un souvenir unique
+                !
+            </p>
+        </section>
+
+        <!-- TELECHARGER LE PROGRAMME -->
+        <div class="program__download">
+            <a href="/assets/pdf/programme.pdf" class="btn btn--dark" download>
+                Télécharger le programme
+            </a>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+    
+        <h2 class="footer__slogan">« VIBREZ AU RYTHME DE LA NATURE »</h2>
+    
+        <nav class="footer__nav">
+            <ul class="footer__list u-list-unstyled">
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/apropos.html">À propos</a></li>
+                <li><a href="/programme.html">Programme</a></li>
+                <li><a href="/artistes.html">Artistes</a></li>
+                <li><a href="/scene.html">Scènes</a></li>
+                <li><a href="/infospratiques.html">Infos pratiques</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    
+        <div class="footer__socials">
+            <a href="#"><img src="/assets/svg/Vector.svg" alt="Twitter"></a>
+            <a href="#"><img src="/assets/svg/instagram 1.svg" alt="Instagram"></a>
+            <a href="#"><img src="/assets/svg/facebook 1.svg" alt="Facebook"></a>
+        </div>
+    
+        <div class="footer__bottom">
+    
+            <div class="footer__left">
+                <a href="#">mentions légales</a>
+                <p>contact@echosonore.fr</p>
+            </div>
+    
+            <p class="footer__copy">© Echo Sonore</p>
+    
+        </div>
+    
+    </footer>
+
+    <!-- JS -->
+    <script src="/src/js/menu.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo Sonore — Ayo</title>
+
+    <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+    
+        <!-- LOGO -->
+        <a class="header__logo" href="/">ECHO SONORE</a>
+    
+        <!-- BOUTON BURGER (ouvre la page menu) -->
+        <button class="header__menu-btn" onclick="window.location.href='/menu.html'">
+            <span></span><span></span><span></span>
+        </button>
+    
+    </header>
+
+
+    <main class="artist-focus">
+
+        <section class="artist-focus__intro">
+            <h1>Ayo</h1>
+            <h2>29 octobre 2026</h2>
+        </section>
+
+        <figure class="artist-focus__main-image">
+            <img src="/assets/img/ayoimg.avif" alt="Ayo">
+            <figcaption>Soul folk lumineuse</figcaption>
+        </figure>
+
+        <section class="artist-focus__resume">
+            <h2>Résumé de l’artiste</h2>
+
+            <p>Ayo, de son vrai nom Joy Olasunmibo Ogunmakin, est une artiste germano-nigériane dont la musique mêle soul, folk et
+            reggae avec une sensibilité unique. Révélée dans les années 2000, elle séduit par sa voix douce et émotive, ainsi que
+            par des chansons simples et profondément sincères.</p>
+            <p>Avec des albums comme Joyful ou Gravity at Last, Ayo explore l’amour, la résilience et ses racines, construisant un
+            univers intimiste et lumineux. Sur scène, elle offre des performances épurées et authentiques, faisant d’elle une figure
+            marquante de la soul-folk contemporaine.</p>
+        </section>
+
+        <!-- CARROUSEL -->
+        <section class="artist-focus__carousel">
+            <button class="carousel__btn carousel__btn--prev">←</button>
+
+            <figure class="carousel__image">
+                <img src="/assets/img/ayocaroussel1img.avif" data-images="/assets/img/ayocaroussel1img.avif,
+                              /assets/img/ayocaroussel2img.avif,
+                              /assets/img/ayocaroussel3img.avif,
+                              /assets/img/ayocaroussel4img.avif" alt="Ayo - galerie">
+            </figure>
+
+            <button class="carousel__btn carousel__btn--next">→</button>
+        </section>
+
+        <div class="artist-focus__back">
+            <a href="/artistes.html" class="btn btn--light">Revenir aux artistes</a>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+    
+        <h2 class="footer__slogan">« VIBREZ AU RYTHME DE LA NATURE »</h2>
+    
+        <nav class="footer__nav">
+            <ul class="footer__list u-list-unstyled">
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/apropos.html">À propos</a></li>
+                <li><a href="/programme.html">Programme</a></li>
+                <li><a href="/artistes.html">Artistes</a></li>
+                <li><a href="/scene.html">Scènes</a></li>
+                <li><a href="/infospratiques.html">Infos pratiques</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    
+        <div class="footer__socials">
+            <a href="#"><img src="/assets/svg/Vector.svg" alt="Twitter"></a>
+            <a href="#"><img src="/assets/svg/instagram 1.svg" alt="Instagram"></a>
+            <a href="#"><img src="/assets/svg/facebook 1.svg" alt="Facebook"></a>
+        </div>
+    
+        <div class="footer__bottom">
+    
+            <div class="footer__left">
+                <a href="#">mentions légales</a>
+                <p>contact@echosonore.fr</p>
+            </div>
+    
+            <p class="footer__copy">© Echo Sonore</p>
+    
+        </div>
+    
+    </footer>
+
+    <!-- JS -->
+    <script src="/src/js/carousel-focus.js"></script>
+    <script src="/src/js/menu.js"></script>
+
+</body>
+
+</html>

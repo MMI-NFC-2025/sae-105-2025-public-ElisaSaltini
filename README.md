@@ -12,3 +12,6 @@
 ## Sujet
 
 [https://moodle.univ-fcomte.fr/mod/page/view.php?id=882862](https://moodle.univ-fcomte.fr/mod/page/view.php?id=882862)
+
+
+Je vous informe ici que mon compte étudiant Infomaniak a été refusé pour cause de carte d'identité invalide. Tout les document concernant ce désagrément ont été envoyés à monsieur Pracht via la boite mail universitaire. Merci de bien vouloir prendre en compte ce refus lors de ma notation.

@@ -1,0 +1,16 @@
+/* Variable collection */
+:root {
+    /* Mode 1 */
+    /* color */
+    --beige100: #e1ded6;
+    --jeune200: #eec453;
+    --noir400: #1e1e1e;
+    --vert-500: #195e24;
+    --vert300: #56a963;
+    /* string */
+    --texte-gras13: Helvetica;
+    --texte-gras16: Helvetica;
+    --texte-gras20: Helvetica;
+    --texte-regular13: Helvetica;
+    --titre: Anton;
+}
