@@ -21,6 +21,10 @@ body.page-apropos main {
     padding-block: 32px 40px;
     background: var(--beige100);
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-start;
 }
 
 .page-apropos .about .section__title {
@@ -34,9 +38,16 @@ body.page-apropos main {
     margin: 0;
 }
 
+.page-apropos .about .section__illustration--full {
+    width: calc(100% + 2 * clamp(20px, 6vw, 30px));
+    margin: 6px calc(-1 * clamp(20px, 6vw, 30px)) 0;
+}
+
 .page-apropos .about .section__illustration--full img {
     height: 260px;
     object-fit: cover;
+    width: 100%;
+    display: block;
 }
 
 /* Chronologie */
