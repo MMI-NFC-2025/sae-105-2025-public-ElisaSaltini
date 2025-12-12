@@ -64,14 +64,15 @@
     padding: 12px;
     background: var(--beige100);
     border-radius: 18px;
-    width: fit-content;
-    display: inline-block;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
 }
 
 .program-section__image img {
     display: block;
     width: 100%;
-    max-width: 280px;
+    max-width: none;
     border-radius: 14px;
     margin: 0;
     object-fit: cover;
@@ -83,7 +84,7 @@
     font-size: 1rem;
     line-height: 1.4;
     color: var(--vert-500);
-    max-width: 280px;
+    max-width: none;
 }
 
 /* Bouton télécharger */
