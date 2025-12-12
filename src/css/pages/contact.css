@@ -4,57 +4,71 @@
    ============================== */
 
 /* --------------------------------
-   SECTION CONTACT (titre + intro)
+   SECTION HERO CONTACT
    -------------------------------- */
-.section-contact {
-    background-color: var(--beige100);
-    padding: 32px 24px 0;
-    text-align: center;
+.contact-page {
+    background: var(--beige100);
+    display: flex;
+    flex-direction: column;
+    gap: 0;
 }
 
-.section-contact .section__title {
+.contact-hero {
+    padding: 28px 24px 12px;
+    background: var(--beige100);
+}
+
+.contact-hero__title {
     font-family: var(--titre), sans-serif;
     text-transform: uppercase;
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     font-weight: 700;
     letter-spacing: 0.06em;
     color: var(--vert-500);
     margin: 0 0 12px;
-    line-height: 1.1;
-    margin-left: auto;
-    margin-right: auto;
+    line-height: 1.05;
 }
 
-.section-contact .section__intro {
+.contact-hero__intro {
     font-family: var(--texte-regular13), sans-serif;
     font-size: 1.4rem;
-    line-height: 1.4;
+    line-height: 1.35;
     color: var(--noir400);
-    max-width: none;
-    margin: 0 auto;
-    text-align: center;
+    margin: 0;
+    max-width: 260px;
 }
 
 
 /* --------------------------------
    FORMULAIRE (bande verte + pilles)
    -------------------------------- */
+.contact-form-block {
+    position: relative;
+    background: var(--vert300);
+    padding: 0 0 28px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contact-form-block__stripe--top {
+    height: 12px;
+    background: var(--vert-500);
+}
+
+.contact-form-block__stripe--gap {
+    height: 10px;
+    background: var(--beige100);
+}
+
 .contact-form {
-    margin: 32px -24px 0;
-    padding: 46px 24px 64px;
-    background: linear-gradient(to bottom,
-            var(--vert-500) 0,
-            var(--vert-500) 14px,
-            var(--beige100) 14px,
-            var(--beige100) 24px,
-            var(--vert300) 24px,
-            var(--vert300) calc(100% - 14px),
-            var(--vert-500) calc(100% - 14px),
-            var(--vert-500) 100%);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 32px 24px 48px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 18px;
     align-items: stretch;
+    background: var(--vert300);
 }
 
 .contact-form__label {
@@ -63,13 +77,13 @@
     letter-spacing: 0.05em;
     font-size: 1.9rem;
     color: var(--vert-500);
-    max-width: none;
+    max-width: 100%;
 }
 
 .contact-form__input,
 .contact-form__textarea {
     width: 100%;
-    max-width: none;
+    max-width: 100%;
     background-color: var(--beige100);
     border: none;
     padding: 17px 22px;
@@ -131,8 +145,13 @@
    -------------------------------- */
 .contact-infos {
     background-color: var(--beige100);
-    padding: 32px 24px 30px;
+    padding: 32px 24px 40px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    text-align: center;
 }
 
 .contact-infos::before {
@@ -146,7 +165,7 @@
     text-transform: uppercase;
     letter-spacing: 0.06em;
     color: var(--vert-500);
-    margin: 0 0 18px;
+    margin: 0 0 6px;
 }
 
 .contact-infos p {
@@ -154,7 +173,9 @@
     font-size: 1.3rem;
     color: var(--noir400);
     line-height: 1.55;
-    margin: 0 0 12px;
+    margin: 0;
+    width: 100%;
+    max-width: 320px;
 }
 
 .contact-infos p strong {
