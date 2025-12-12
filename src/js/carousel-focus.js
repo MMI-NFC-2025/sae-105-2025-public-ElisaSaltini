@@ -1,4 +1,5 @@
 // CARROUSEL — fonctionne pour toutes les pages artistes
+// fonctionne sur caroussel pages focus artistes
 
 document.addEventListener("DOMContentLoaded", () => {
 
