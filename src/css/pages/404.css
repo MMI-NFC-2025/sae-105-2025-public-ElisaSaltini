@@ -1,0 +1,83 @@
+/* Page 404 Echo Sonore */
+
+.notfound {
+    background: var(--beige100);
+    color: var(--vert-500);
+    padding: 48px 24px 80px;
+    display: grid;
+    gap: 32px;
+    align-items: center;
+}
+
+.notfound__content {
+    max-width: 520px;
+    display: grid;
+    gap: 12px;
+}
+
+.notfound__eyebrow {
+    margin: 0;
+    font-family: var(--texte-gras13), sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--vert-400);
+}
+
+.notfound__title {
+    margin: 0;
+    font-family: var(--titre), sans-serif;
+    font-size: 3.2rem;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--vert-500);
+}
+
+.notfound__text {
+    margin: 0;
+    font-family: var(--texte-regular13), sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.55;
+    color: var(--vert-400);
+}
+
+.notfound__actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+
+.notfound__actions .btn {
+    min-width: 160px;
+    text-align: center;
+}
+
+.notfound__illustration {
+    justify-self: center;
+    width: min(480px, 100%);
+    background: var(--vert-500);
+    border-radius: 16px;
+    padding: 12px;
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.18);
+}
+
+.notfound__illustration img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+@media (min-width: 768px) {
+    .notfound {
+        grid-template-columns: 1.1fr 1fr;
+        padding: 72px 64px 120px;
+    }
+
+    .notfound__title {
+        font-size: 3.8rem;
+    }
+}

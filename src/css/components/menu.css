@@ -1,95 +1,102 @@
 /* ===========================
-      PAGE MENU (FULL SCREEN)
+      OVERLAY GLOBAL
 =========================== */
 
-.menu-page {
-    background: var(--vert300);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-
-/* ===========================
-      HEADER
-=========================== */
-
-.menu-header {
-    height: 132px;
-    background: var(--vert300);
+.menu-overlay {
+    position: fixed;
+    inset: 0;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+    background: rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 240ms ease;
+    z-index: 999;
+}
+
+html.menu-open .menu-overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.menu-overlay__backdrop {
+    position: fixed;
+    inset: 0;
+}
+
+.menu-overlay__panel {
+    position: relative;
+    background: var(--vert300);
+    color: var(--beige100);
+    width: min(520px, 100%);
+    min-height: 100vh;
+    padding: 32px 40px 48px;
+    transform: translateY(-6%);
+    transition: transform 260ms ease;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.25);
+}
+
+html.menu-open .menu-overlay__panel {
+    transform: translateY(0);
+}
+
+.menu-overlay__header {
+    height: 132px;
+    display: flex;
     align-items: center;
+    justify-content: center;
     position: relative;
 }
 
-.menu-header__logo {
+.menu-overlay__logo {
     font-family: var(--titre);
     font-size: 40px;
     color: var(--beige100);
     text-decoration: none;
 }
 
-/* BOUTON FERMER (la croix) */
-.menu-header__close {
+.menu-overlay__close {
     position: absolute;
-    right: 25px;
-    top: 55px;
-    width: 24px;
-    height: 30px;
-
+    right: 12px;
+    top: 46px;
+    width: 32px;
+    height: 32px;
     background: none;
     border: none;
     cursor: pointer;
-
-    /* La croix tracée en CSS, identique Figma */
-    position: absolute;
 }
 
-.menu-header__close::before,
-.menu-header__close::after {
+.menu-overlay__close::before,
+.menu-overlay__close::after {
     content: "";
     position: absolute;
-    left: 0;
-    top: 11px;
+    left: 4px;
+    top: 15px;
     width: 24px;
     height: 2px;
     background: var(--beige100);
 }
 
-.menu-header__close::before {
+.menu-overlay__close::before {
     transform: rotate(45deg);
 }
 
-.menu-header__close::after {
+.menu-overlay__close::after {
     transform: rotate(-45deg);
 }
 
-
-/* ===========================
-      CONTENU DU MENU
-=========================== */
-
-.menu-content {
-    padding: 40px 50px;
-    display: flex;
-    flex-direction: column;
-}
-
-
-/* LISTE DES LIENS */
-.menu-nav ul {
+.menu-overlay__nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.menu-nav li {
+.menu-overlay__nav li {
     margin-bottom: 14px;
 }
 
-.menu-nav a {
+.menu-overlay__nav a {
     font-family: Helvetica;
     font-weight: 700;
     font-size: 20px;
@@ -98,62 +105,53 @@
     text-decoration: none;
 }
 
-
-/* ===========================
-      TRAIT SÉPARATEUR 
-=========================== */
-
-.menu-separator {
+.menu-overlay__separator {
     width: 300px;
     height: 0;
     border-top: 3px solid var(--beige100);
     margin: 40px auto;
 }
 
-
-/* ===========================
-      ICONES RÉSEAUX SOCIAUX
-=========================== */
-
-.menu-socials {
+.menu-overlay__socials {
     display: flex;
     justify-content: center;
     gap: 50px;
     margin-top: 10px;
 }
 
-.menu-socials img {
+.menu-overlay__socials img {
     width: 40px;
-
-    /* Rend l’icône blanche */
     filter: brightness(0) invert(1);
-    /* Ajuste pour approcher var(--beige100) */
     opacity: 0.92;
-    /* Rend les icônes couleur beige comme Figma mais sans la variable car je n'y arrive pas */
 }
 
-
-/* ===========================
-      FOOTER DU MENU
-=========================== */
-
-.menu-footer {
+.menu-overlay__footer {
     margin-top: 40px;
-    padding: 0 0px;
     color: var(--beige100);
     font-size: 13px;
     line-height: 27px;
 }
 
-.menu-footer p,
-.menu-footer a {
+.menu-overlay__footer p,
+.menu-overlay__footer a {
     margin: 0;
     color: var(--beige100);
     text-decoration: none;
 }
 
-.menu-footer__bottom {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 15px;
+html.menu-open,
+body.menu-open {
+    overflow: hidden;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }

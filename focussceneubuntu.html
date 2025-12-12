@@ -14,16 +14,53 @@
 
     <!-- HEADER -->
     <header class="header">
-    
+
         <!-- LOGO -->
         <a class="header__logo" href="/">ECHO SONORE</a>
-    
-        <!-- BOUTON BURGER (ouvre la page menu) -->
-        <button class="header__menu-btn" onclick="window.location.href='/menu.html'">
+
+        <!-- BOUTON BURGER -->
+        <button class="header__menu-btn" type="button" aria-expanded="false" aria-controls="menu-overlay">
             <span></span><span></span><span></span>
         </button>
-    
+
     </header>
+
+    <div class="menu-overlay" id="menu-overlay" aria-hidden="true">
+        <div class="menu-overlay__backdrop" data-menu-close></div>
+        <div class="menu-overlay__panel" role="dialog" aria-modal="true" aria-labelledby="menu-overlay-title">
+            <header class="menu-overlay__header">
+                <a href="/" class="menu-overlay__logo">ECHO SONORE</a>
+                <button class="menu-overlay__close" type="button" aria-label="Fermer le menu" data-menu-close></button>
+            </header>
+
+            <nav class="menu-overlay__nav" aria-labelledby="menu-overlay-title">
+                <h2 id="menu-overlay-title" class="sr-only">Navigation principale</h2>
+                <ul>
+                    <li><a href="/">ACCUEIL</a></li>
+                    <li><a href="/apropos.html">À PROPOS</a></li>
+                    <li><a href="/programme.html">PROGRAMME</a></li>
+                    <li><a href="/artistes.html">ARTISTES</a></li>
+                    <li><a href="/scene.html">SCÈNE</a></li>
+                    <li><a href="/infospratiques.html">INFOS PRATIQUES</a></li>
+                    <li><a href="/contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <hr class="menu-overlay__separator">
+
+            <div class="menu-overlay__socials">
+                <a href="#"><img src="/assets/svg/Vector.svg" alt="Twitter"></a>
+                <a href="#"><img src="/assets/svg/instagram 1.svg" alt="Instagram"></a>
+                <a href="#"><img src="/assets/svg/facebook 1.svg" alt="Facebook"></a>
+            </div>
+
+            <div class="menu-overlay__footer">
+                <p>mentions légales</p>
+                <p>contact@echosonore.fr</p>
+                <p>© Echo Sonore</p>
+            </div>
+        </div>
+    </div>
 
 
     <main class="scene-focus">
@@ -100,9 +137,9 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-    
+
         <h2 class="footer__slogan">« VIBREZ AU RYTHME DE LA NATURE »</h2>
-    
+
         <nav class="footer__nav">
             <ul class="footer__list u-list-unstyled">
                 <li><a href="/">Accueil</a></li>
@@ -114,24 +151,24 @@
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
         </nav>
-    
+
         <div class="footer__socials">
             <a href="#"><img src="/assets/svg/Vector.svg" alt="Twitter"></a>
             <a href="#"><img src="/assets/svg/instagram 1.svg" alt="Instagram"></a>
             <a href="#"><img src="/assets/svg/facebook 1.svg" alt="Facebook"></a>
         </div>
-    
+
         <div class="footer__bottom">
-    
+
             <div class="footer__left">
                 <a href="#">mentions légales</a>
                 <p>contact@echosonore.fr</p>
             </div>
-    
+
             <p class="footer__copy">© Echo Sonore</p>
-    
+
         </div>
-    
+
     </footer>
 
     <!-- JS -->
