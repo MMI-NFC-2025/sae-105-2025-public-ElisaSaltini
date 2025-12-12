@@ -77,7 +77,26 @@
 
 /* SECTIONS ACCUEIL */
 .section {
-    padding: 32px 20px 40px;
+    padding: 32px 20px 44px;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    grid-template-areas:
+        "text art"
+        "cta art";
+    align-items: center;
+    gap: 14px 18px;
+}
+
+#program,
+#infos {
+    grid-template-columns: 0.95fr 1.05fr;
+    grid-template-areas:
+        "art text"
+        "art cta";
+}
+
+.section__header {
+    grid-area: text;
 }
 
 .section__title {
@@ -93,38 +112,55 @@
     font-family: var(--texte-regular13), sans-serif;
     font-size: 1.2rem;
     line-height: 1.4;
-    margin: 0 0 18px;
+    margin: 0;
     color: var(--noir400);
 }
 
+.section__illustration--full {
+    grid-area: art;
+    justify-self: center;
+}
+
+.section__illustration--full img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .section .btn {
+    grid-area: cta;
     margin: 0;
     display: inline-flex;
     align-items: center;
 }
 
 .section+.section::before {
-    width: 92%;
+    width: 88%;
+    max-width: 760px;
     height: 2px;
     background: var(--vert-500);
+    margin: 0 auto;
 }
 
-/* Illustrations réduites comme maquette */
-#about .section__illustration--full img,
-#program .section__illustration--full img,
-#artists .section__illustration--full img,
-#infos .section__illustration--full img {
-    width: 120px;
-    height: auto;
-    margin: 0 auto 18px;
+/* Illustrations calibrées selon maquette */
+#about .section__illustration--full img {
+    width: 180px;
+    margin: 0 0 0 auto;
+}
+
+#program .section__illustration--full img {
+    width: 200px;
+    margin: 0 auto 0 0;
 }
 
 #artists .section__illustration--full img {
-    width: 140px;
+    width: 200px;
+    margin: 0 0 0 auto;
 }
 
 #infos .section__illustration--full img {
-    width: 110px;
+    width: 180px;
+    margin: 0 auto 0 0;
 }
 
 #about,
@@ -132,4 +168,14 @@
 #artists,
 #infos {
     padding-top: 44px;
+}
+
+/* Partenaires : revenir à la mise en page centrée verticale d'origine */
+#partners {
+    display: block;
+    padding: 32px 20px 44px;
+}
+
+#partners .section__header {
+    text-align: center;
 }
