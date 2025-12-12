@@ -134,12 +134,26 @@
     transform: translateY(-50%);
     font-size: 1.2rem;
     color: var(--vert-500);
+    transition: transform 200ms ease;
+}
+
+.faq-item.is-open .faq-question::after {
+    transform: translateY(-50%) rotate(180deg);
 }
 
 .faq-answer {
-    padding: 0 16px 12px;
+    padding: 0 16px 0;
     font-family: var(--texte-regular13), sans-serif;
     font-size: 1.2rem;
     color: var(--vert-500);
     line-height: 1.5;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 260ms ease, opacity 200ms ease, padding 260ms ease;
+}
+
+.faq-answer.is-open {
+    padding: 0 16px 12px;
+    opacity: 1;
 }
