@@ -45,32 +45,33 @@
 
 .program-section {
     background: none;
-    padding: 0 0 26px;
-    margin: 0 auto 24px;
-    max-width: 300px;
+    padding: 0 0 30px;
+    margin: 0 0 26px;
+    width: 100%;
 }
 
 .program-section__title {
     margin: 0 0 14px;
     font-family: var(--titre), sans-serif;
-    font-size: 2.1rem;
+    font-size: 2.3rem;
     line-height: 1.05;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.02em;
     color: var(--vert-500);
 }
 
 .program-section__image {
-    margin: 0 auto 12px;
-    padding: 10px;
+    margin: 0 0 14px;
+    padding: 12px;
     background: var(--beige100);
     border-radius: 18px;
     width: fit-content;
+    display: inline-block;
 }
 
 .program-section__image img {
     display: block;
     width: 100%;
-    max-width: 240px;
+    max-width: 280px;
     border-radius: 14px;
     margin: 0;
     object-fit: cover;
@@ -79,10 +80,10 @@
 .program-section__text {
     margin: 0;
     font-family: var(--texte-regular13), sans-serif;
-    font-size: 0.95rem;
-    line-height: 1.35;
+    font-size: 1rem;
+    line-height: 1.4;
     color: var(--vert-500);
-    max-width: 240px;
+    max-width: 280px;
 }
 
 /* Bouton télécharger */
