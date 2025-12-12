@@ -9,6 +9,7 @@
 .section-contact {
     background-color: var(--beige100);
     padding: 32px 24px 0;
+    text-align: center;
 }
 
 .section-contact .section__title {
@@ -19,6 +20,9 @@
     letter-spacing: 0.06em;
     color: var(--vert-500);
     margin: 0 0 12px;
+    line-height: 1.1;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section-contact .section__intro {
@@ -26,8 +30,9 @@
     font-size: 1.4rem;
     line-height: 1.4;
     color: var(--noir400);
-    max-width: 260px;
-    margin: 0;
+    max-width: none;
+    margin: 0 auto;
+    text-align: center;
 }
 
 
@@ -36,57 +41,57 @@
    -------------------------------- */
 .contact-form {
     margin: 32px -24px 0;
-    padding: 40px 24px 54px;
+    padding: 46px 24px 64px;
     background: linear-gradient(to bottom,
             var(--vert-500) 0,
-            var(--vert-500) 12px,
-            var(--beige100) 12px,
-            var(--beige100) 18px,
-            var(--vert300) 18px,
-            var(--vert300) calc(100% - 12px),
-            var(--vert-500) calc(100% - 12px),
+            var(--vert-500) 14px,
+            var(--beige100) 14px,
+            var(--beige100) 24px,
+            var(--vert300) 24px,
+            var(--vert300) calc(100% - 14px),
+            var(--vert-500) calc(100% - 14px),
             var(--vert-500) 100%);
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 20px;
     align-items: stretch;
 }
 
-.contact-form .form__label {
+.contact-form__label {
     font-family: var(--titre), sans-serif;
     text-transform: uppercase;
-    letter-spacing: 0.04em;
-    font-size: 1.8rem;
+    letter-spacing: 0.05em;
+    font-size: 1.9rem;
     color: var(--vert-500);
-    max-width: 360px;
+    max-width: none;
 }
 
-.contact-form .form__input,
-.contact-form .form__textarea {
+.contact-form__input,
+.contact-form__textarea {
     width: 100%;
-    max-width: 360px;
+    max-width: none;
     background-color: var(--beige100);
     border: none;
-    padding: 16px 20px;
+    padding: 17px 22px;
     font-family: var(--texte-regular13), sans-serif;
     font-size: 1.4rem;
     color: var(--noir400);
-    border-radius: 24px;
+    border-radius: 26px;
     outline: none;
 }
 
-.contact-form .form__textarea {
-    min-height: 240px;
+.contact-form__textarea {
+    min-height: 260px;
     border-radius: 18px;
     resize: vertical;
 }
 
-.contact-form .form__input:focus,
-.contact-form .form__textarea:focus {
+.contact-form__input:focus,
+.contact-form__textarea:focus {
     box-shadow: 0 0 0 2px rgba(25, 94, 36, 0.32);
 }
 
-.contact-form .btn.btn--dark {
+.contact-form__submit {
     align-self: flex-start;
     padding: 8px 18px;
     border-radius: 20px;
@@ -98,33 +103,43 @@
     text-transform: uppercase;
     letter-spacing: 0.08em;
     cursor: pointer;
-    align-self: flex-start;
     margin-left: 0;
+    gap: 10px;
 }
 
-.contact-form .btn.btn--dark:hover {
+.contact-form__submit .btn__icon {
+    width: 18px;
+    height: 11px;
+}
+
+.contact-form__submit:hover {
     transform: translateY(-1px);
 }
 
-.contact-form .btn.btn--dark:active {
+.contact-form__submit:active {
     transform: translateY(0);
+}
+
+.contact-form__submit:focus-visible {
+    outline: 2px solid rgba(25, 94, 36, 0.32);
+    outline-offset: 2px;
 }
 
 
 /* --------------------------------
    SECTION INFOS PRATIQUES
    -------------------------------- */
-.section.section--infos {
+.contact-infos {
     background-color: var(--beige100);
     padding: 32px 24px 30px;
     position: relative;
 }
 
-.section.section--infos::before {
+.contact-infos::before {
     content: none;
 }
 
-.section.section--infos .section__title {
+.contact-infos .section__title {
     font-family: var(--titre), sans-serif;
     font-size: 2.4rem;
     font-weight: 700;
@@ -134,7 +149,7 @@
     margin: 0 0 18px;
 }
 
-.section.section--infos p {
+.contact-infos p {
     font-family: var(--texte-regular13), sans-serif;
     font-size: 1.3rem;
     color: var(--noir400);
@@ -142,7 +157,7 @@
     margin: 0 0 12px;
 }
 
-.section.section--infos p strong {
+.contact-infos p strong {
     font-family: var(--texte-gras13), sans-serif;
     text-transform: uppercase;
     color: var(--vert-500);
@@ -150,7 +165,7 @@
     letter-spacing: 0.04em;
 }
 
-.section.section--infos::after {
+.contact-infos::after {
     content: "";
     display: block;
     width: 88%;
@@ -163,17 +178,17 @@
 /* --------------------------------
    SECTION RÉSEAUX SOCIAUX
    -------------------------------- */
-.section.section--socials {
+.contact-socials {
     background-color: var(--beige100);
     padding: 22px 24px 44px;
     position: relative;
 }
 
-.section.section--socials::before {
+.contact-socials::before {
     content: none;
 }
 
-.section.section--socials .section__title {
+.contact-socials .section__title {
     font-family: var(--titre), sans-serif;
     text-transform: uppercase;
     font-size: 2.4rem;
@@ -183,19 +198,19 @@
     margin: 0 0 24px;
 }
 
-.socials {
+.contact-socials .socials {
     display: flex;
     justify-content: space-between;
     max-width: 240px;
     margin: 0 auto 14px;
 }
 
-.socials a img {
+.contact-socials .socials a img {
     display: block;
     width: 44px;
 }
 
-.socials__tags {
+.contact-socials .socials__tags {
     display: flex;
     justify-content: space-between;
     max-width: 280px;
@@ -205,6 +220,6 @@
     color: var(--noir400);
 }
 
-.socials__tags p {
+.contact-socials .socials__tags p {
     margin: 0;
 }

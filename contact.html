@@ -67,29 +67,34 @@
 
         <!-- SECTION CONTACT -->
         <section class="section section--wrapper section-contact">
-            <h2 class="section__title">CONTACT</h2>
-            <p class="section__intro">
-                Une question ou une demande particulière ?
-                Notre équipe est là pour vous répondre !
-            </p>
+            <div class="section-contact__header">
+                <h2 class="section__title">CONTACT</h2>
+                <p class="section__intro">
+                    Une question ou une demande particulière ?
+                    Notre équipe est là pour vous répondre !
+                </p>
+            </div>
 
             <form class="contact-form">
-                <label class="form__label" for="name">Nom</label>
-                <input class="form__input" type="text" id="name" name="name" required>
+                <label class="contact-form__label" for="name">Nom</label>
+                <input class="contact-form__input" type="text" id="name" name="name" required>
 
-                <label class="form__label" for="email">Adresse mail</label>
-                <input class="form__input" type="email" id="email" name="email" required>
+                <label class="contact-form__label" for="email">Adresse mail</label>
+                <input class="contact-form__input" type="email" id="email" name="email" required>
 
-                <label class="form__label" for="message">Message</label>
-                <textarea class="form__textarea" id="message" name="message" required></textarea>
+                <label class="contact-form__label" for="message">Message</label>
+                <textarea class="contact-form__textarea" id="message" name="message" required></textarea>
 
-                <button type="submit" class="btn btn--dark">Envoyer</button>
+                <button type="submit" class="btn btn--dark contact-form__submit">
+                    <span class="btn__icon" aria-hidden="true"></span>
+                    <span>Envoyer</span>
+                </button>
             </form>
         </section>
 
 
         <!-- SECTION INFOS PRATIQUES -->
-        <section class="section section--infos">
+        <section class="section section--infos contact-infos">
             <h2 class="section__title">Infos pratiques</h2>
 
             <p><strong>Adresse</strong><br>
@@ -107,7 +112,7 @@
         </section>
 
 
-        <section class="section section--socials">
+        <section class="section section--socials contact-socials">
             <h2 class="section__title">Réseaux sociaux</h2>
 
             <div class="socials">
