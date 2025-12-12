@@ -11,8 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         answer.style.maxHeight = `${startHeight}px`;
         answer.classList.remove("is-open");
 
-        // Force reflow to ensure the transition starts from the measured height.
-        // eslint-disable-next-line no-unused-expressions
+        // Force un reflow pour lancer la transition depuis la hauteur mesurée.
         answer.offsetHeight;
 
         answer.style.maxHeight = "0px";
