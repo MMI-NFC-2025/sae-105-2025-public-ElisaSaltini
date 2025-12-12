@@ -100,10 +100,19 @@
                     31 octobre 2026
                 </button>
             </div>
+
+            <form class="artists-search" role="search" aria-label="Rechercher un artiste">
+                <label class="artists-search__label" for="artists-search-input">Rechercher un artiste</label>
+                <div class="artists-search__field">
+                    <input id="artists-search-input" class="artists-search__input" type="search"
+                        placeholder="Nom ou style" autocomplete="off" />
+                </div>
+            </form>
         </section>
 
         <!-- LISTE DES ARTISTES (tous les jours, filtrés en JS) -->
         <section class="section section-artistes__list">
+            <p class="artists-no-results" hidden>Aucun artiste trouvé. Essayez une autre date ou un autre mot-clé.</p>
             <ul class="artists-list u-list-unstyled">
 
                 <!-- JOUR 28 OCTOBRE -->

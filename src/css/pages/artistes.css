@@ -58,7 +58,7 @@ body.page-artistes main {
 .page-artistes .section-artistes__dates {
     background: var(--vert-500);
     padding-top: 18px;
-    padding-bottom: 12px;
+    padding-bottom: 14px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,6 +80,50 @@ body.page-artistes main {
     width: 100%;
     max-width: 320px;
     justify-items: center;
+}
+
+/* Barre de recherche */
+.page-artistes .artists-search {
+    width: 100%;
+    max-width: 320px;
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.page-artistes .artists-search__label {
+    font-family: var(--titre), sans-serif;
+    font-size: 1.15rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--beige100);
+    margin: 0;
+}
+
+.page-artistes .artists-search__field {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: var(--beige100);
+    border-radius: 14px;
+    padding: 6px 12px;
+    box-shadow: 0 0 0 1px rgba(25, 94, 36, 0.18);
+}
+
+.page-artistes .artists-search__input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    font-family: var(--texte-regular13), sans-serif;
+    font-size: 1.1rem;
+    color: var(--vert-500);
+    outline: none;
+    padding: 6px 4px;
+}
+
+.page-artistes .artists-search__input::placeholder {
+    color: rgba(25, 94, 36, 0.7);
 }
 
 .page-artistes .artists-filters__btn {
@@ -115,6 +159,14 @@ body.page-artistes main {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.page-artistes .artists-no-results {
+    margin: 0 0 18px;
+    font-family: var(--texte-regular13), sans-serif;
+    font-size: 1.1rem;
+    color: var(--beige100);
+    text-align: center;
 }
 
 .page-artistes .artists-list {
