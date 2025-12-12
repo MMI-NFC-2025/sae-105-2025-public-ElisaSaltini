@@ -1,4 +1,4 @@
-// CARROUSEL PARTENAIRES (transition douce + auto-play)
+/* Accueil : carrousel partenaires avec transition douce, autoplay et pause au survol. */
 
 document.addEventListener("DOMContentLoaded", () => {
     const carousel = document.querySelector(".partners__carousel");

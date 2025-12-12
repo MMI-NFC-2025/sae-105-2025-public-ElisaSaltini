@@ -1,3 +1,5 @@
+/* Page Infos pratiques : accordéon FAQ qui ouvre/ferme les réponses et met à jour aria-expanded. */
+
 document.addEventListener("DOMContentLoaded", () => {
     const questions = document.querySelectorAll(".faq-question");
 

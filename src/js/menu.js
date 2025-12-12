@@ -1,3 +1,5 @@
+/* Navigation globale : ouverture/fermeture du menu overlay sur toutes les pages, gestion aria et clavier. */
+
 (() => {
     const html = document.documentElement;
     const menuButtons = document.querySelectorAll('.header__menu-btn');

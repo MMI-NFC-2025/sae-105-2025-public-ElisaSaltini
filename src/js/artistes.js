@@ -1,3 +1,5 @@
+/* Page Artistes : filtres par jour et recherche accent-insensible sur les cartes artistes. */
+
 document.addEventListener('DOMContentLoaded', () => {
     const filterButtons = document.querySelectorAll('.artists-filters__btn');
     const artistCards = document.querySelectorAll('.artist-card');

@@ -1,5 +1,4 @@
-// CARROUSEL — fonctionne pour toutes les pages artistes
-// fonctionne sur caroussel pages focus artistes
+/* Pages focus artistes : carrousel manuel suivant/précédent pour changer les visuels des focus. */
 
 document.addEventListener("DOMContentLoaded", () => {
 

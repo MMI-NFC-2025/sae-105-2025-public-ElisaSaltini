@@ -1,3 +1,5 @@
+/* Page scène Nyama : onglets de jour (28/29) pour afficher les artistes correspondants. */
+
 document.addEventListener('DOMContentLoaded', () => {
     const filterButtons = document.querySelectorAll('.scene-filters__btn');
     const lists = document.querySelectorAll('.scene-artists-list');
